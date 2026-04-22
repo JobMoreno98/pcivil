@@ -55,7 +55,7 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ $fumigacion->exists ? route('fumigacions.update', $fumigacion->id) : route('fumigacions.store') }}" class="login-form">
+        <form method="POST" action="{{ $fumigacion->exists ? route('fumigaciones.update', $fumigacion->id) : route('fumigaciones.store') }}" class="login-form">
             @csrf
             @if($fumigacion->exists) @method('PUT') @endif
 
