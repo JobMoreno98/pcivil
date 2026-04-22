@@ -89,10 +89,10 @@ class FumigacionController extends Controller
         return view('fumigaciones.show', compact('fumigacion'));
     }
 
-    public function edit(Fumigacion $fumigacione)  
+    public function edit(Fumigacion $fumigacion)  
     {
         
-        $tipo = $fumigacione->tipo;
+        $tipo = $fumigacion->tipo;
         $periodos = FumigacionPeriodo::all();
         $areas = Area::orderBy('tipo_establecimiento')->get();
         $responsables = Responsable::orderBy('nombre')->get();
@@ -100,7 +100,7 @@ class FumigacionController extends Controller
         $equipoFumigaciones = EquipoFumigacion::orderBy('nombre')->get();
         
         return view('fumigaciones.form', compact(
-            'fumigacione',  
+            'fumigacion',  
             'tipo',
             'periodos',
             'areas',

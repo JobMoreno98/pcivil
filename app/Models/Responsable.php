@@ -19,7 +19,7 @@ class Responsable extends Model
 
 
     //Relación con las atenciones
-    public function atncion(): HasMany
+    public function atencion(): HasMany
     {
         return $this->hasMany(Incidente::class);
     }

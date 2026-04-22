@@ -14,7 +14,7 @@ class Clave extends Model
     public const PAGINATE = 10;
 
 
-    public function atncion(): HasMany
+    public function atencion(): HasMany
      {
          return $this->hasMany(Extintor::class);
      }

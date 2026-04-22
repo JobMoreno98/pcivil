@@ -15,7 +15,7 @@ class TipoIncidente extends Model
 
 
     //Relación con las incidencias
-    public function atncion(): HasMany
+    public function atencion(): HasMany
     {
         return $this->hasMany(Incidente::class);
     }

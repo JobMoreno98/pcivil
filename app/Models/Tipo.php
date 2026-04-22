@@ -15,7 +15,7 @@ class Tipo extends Model
     public const PAGINATE = 10;
 
     //Relación con los extintores
-    public function atncion(): HasMany
+    public function atencion(): HasMany
     {
         return $this->hasMany(Extintor::class);
     }

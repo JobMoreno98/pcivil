@@ -23,7 +23,7 @@
 <section class="hero">
     <div class="login-wrapper-M">
         <h1 style="text-align: center; color: #7c0000; margin-bottom: 30px;">
-            {{ $fumigacione->exists ? 'Editar' : 'Nueva' }} Fumigación
+            {{ $fumigacion->exists ? 'Editar' : 'Nueva' }} Fumigación
         </h1>
 
         @if(session('message'))
