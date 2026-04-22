@@ -181,13 +181,13 @@
                 <div class="d-flex gap-2 mb-2">
                     <select name="equipo_fumigacion_id" class="form-control" required>
                         <option value="">Seleccione un equipo...</option>
-                        @foreach($equipofumigacions as $equipo)
+                        @foreach($equipoFumigaciones as $equipo)
                             <option value="{{ $equipo->id }}" {{ old('equipo_fumigacion_id', $fumigacion->equipo_fumigacion_id) == $equipo->id ? 'selected' : '' }}>
                                 {{ $equipo->nombre }}
                             </option>
                         @endforeach
                     </select>
-                    <a href="{{ route('equipofumigacions.create') }}" class="btn btn-outline-secondary" target="_blank">
+                    <a href="{{ route('equipoFumigaciones.create') }}" class="btn btn-outline-secondary" target="_blank">
                         <i class="fa-solid fa-plus"></i>
                     </a>
                 </div>
@@ -215,7 +215,7 @@
                     <i class="fa-solid fa-check-to-slot"></i> 
                     {{ $fumigacion->exists ? 'Actualizar' : 'Registrar' }}
                 </button>
-                <a href="{{ route('fumigacions.index') }}" class="btn btn-secondary w-100 mt-2">
+                <a href="{{ route('fumigaciones.index') }}" class="btn btn-secondary w-100 mt-2">
                     <i class="fa-solid fa-arrow-left"></i> Cancelar
                 </a>
             </div>
