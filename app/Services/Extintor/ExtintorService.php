@@ -2,8 +2,9 @@
 
 namespace App\Services\Extintor;
 
-use \Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use App\Models\Extintor;
+use \Illuminate\Contracts\Pagination\LengthAwarePaginator;
+
 
 
 class ExtintorService
