@@ -20,6 +20,8 @@ class Extintor extends Model
         'observaciones',
     ];
 
+    
+
     public const PAGINATE = 10;
 
     public function area(): BelongsTo
